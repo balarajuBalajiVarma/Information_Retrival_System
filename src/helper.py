@@ -2,8 +2,10 @@ import os
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import GooglePalmEmbeddings
-from langchain.llms import GooglePalm
-from langchain.vectorstores import FAISS
+# from langchain.llms import GooglePalm
+from langchain_community.llms import GooglePalm
+# from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 from dotenv import load_dotenv
